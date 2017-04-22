@@ -1,0 +1,328 @@
+
+:root{
+    font-size: 15px;
+}
+nav{
+    position: fixed;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+p,a{
+    font-weight:300;
+}
+
+
+.page-header{
+    width:100%;
+    height: 100vh;
+    background: url('../media/final/4.jpg') no-repeat center center;
+    background-size: cover;
+    color:#fff;
+}
+.block-div{
+    width:100%;
+    height:100%;
+    background: url("../media/overlay.png");
+    padding-top: 1px;
+}
+
+.page-header .header-nav{
+    margin-top: 10px;
+}
+
+.page-header .header-links{
+    float: right;
+}
+.page-header .header-links li{
+    display: inline-block;
+    margin:10px;
+}
+.page-header .header-links a{
+    color: #fff;
+    font-size: 1.25rem;
+    position: relative;
+}
+.page-header #header-logo{
+    float: left;
+    width: 65px;
+}
+.page-header .header-links>li span{
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    top:25px;
+    transform-origin: center;
+    transform: scale(0);
+    transition: 0.2s ease-out;
+}
+.page-header .header-links>li>a:hover span{
+    transform: scale(1);
+}
+.header-text{
+    margin-top: 25%;
+}
+.header-text > .row{
+    width:100%;
+}
+.header-text h5{
+    margin-top: -20px;
+    font-weight: 200;
+    text-align: center;
+}
+.header-text h1{
+    text-align: center;
+    font-weight: 400;
+}
+.about-section{
+    padding-top: 30px;
+}
+
+.about-section h4,.about-section p{
+    text-align: center;
+}
+.about-section p{
+    margin-top: 0;
+}
+.about-section h4{
+    margin-bottom: 0;
+}
+
+
+.features-section{
+    padding-bottom: 30px;
+}
+.features-section i.medium{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.products-section{
+    color: #fff;
+}
+
+.container-full>.row{
+    margin-bottom:0;
+}
+
+.container-full>.row >div{
+    height: 500px;
+}
+.container-full .row .col{
+    padding:0;
+}
+.img-block{
+    height:100%;
+    width: 100%;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+
+.container-full p{
+    font-size: 1.2rem;
+}
+.product h6{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.container-full .product1-text,.container-full .product3-text{
+    background: #F1F1F1;
+    color: #000;
+}
+.container-full .product2-text{
+    background: #3C3F41;
+}
+.col.m6.s12.product{
+    padding: 40px;
+}
+.specs-list{
+    margin-left:140px;
+}
+
+.w300{
+    font-weight: 300;
+}
+
+.contacts-section{
+    background: #3C3F41;
+    color: #fff;
+    font-weight:200;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.contacts-section >.row{
+    margin-top: 20px;
+}
+
+.contacts-section ul li{
+    margin: 10px 0;
+}
+
+.contacts-text-block{
+    background: #434648;
+}
+.contacts-text-row{
+    margin-top: 20px;
+}
+.contacts-text{
+    border-left: 2px #909395 solid;
+    margin-top: 90px;
+}
+
+
+
+footer{
+    width:100%;
+    height: 50px;
+    background: #00796B;
+}
+footer p{
+    color: #fff;
+    float: right;
+    margin: 15px 60px 0 0;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: #909395;
+    margin-bottom: 20px;
+}
+
+@media only all and (max-width:800px){
+    .page-header{
+        background-attachment: inherit;
+    }
+}
+
+@media only all and (max-width:600px){
+    :root{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 300;
+    }
+    p,a{
+        font-weight:400;
+    }
+    .contacts-text{
+        border:none;
+    }
+    .contacts-text ul{
+        text-align: center;
+    }
+    .rslides img{
+        transform: translateX(-20%);
+    }
+}
+@media only all and (max-width: 850px) and (min-width:600px) {
+    .rslides img{
+        transform: translateX(-20%);
+    }
+}
+
+@media only all and (max-width:360px){
+    .page-header .header-links,.page-header #header-logo{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+}
+
+/******************************/
+/**********slider**************/
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    max-height: 500px;
+    width: auto;
+    border: 0;
+    margin: 0 auto;
+}
+
+
+
+
+/********** animation for WOW.js *************/
+
+.fadeIn{
+    -webkit-animation: fadeInAnim 0.8s both;
+    animation: fadeInAnim 0.8s both;
+}
+.fadeLeft{
+    -webkit-animation: fadeLeftAnim 0.8s both;
+    animation: fadeLeftAnim 0.8s both;
+}
+
+@keyframes fadeInAnim {
+    from{
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to{
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes fadeLeftAnim {
+    from{
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        transform: translateX(-10px);
+        opacity:0;
+    }
+    to{
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        opacity:1;
+    }
+
+}

@@ -1,0 +1,24 @@
+{
+  "name": "alqaddy-textile-company",
+  "version": "1.0.0",
+  "description": "Official website of alqaddy textile company",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TarekAlQaddy/AlQaddy-Textile-Website.git"
+  },
+  "author": "Tarek AlQaddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TarekAlQaddy/AlQaddy-Textile-Website/issues"
+  },
+  "homepage": "https://github.com/TarekAlQaddy/AlQaddy-Textile-Website#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "materialize-css": "^0.98.0",
+    "wowjs": "^1.1.3"
+  }
+}
