@@ -11,7 +11,7 @@ $(document).ready(function () {
 });
 //Google Maps
 function initMap(){
-    var alqaddy = {lat: 31.1976082, lng:29.9248398};
+    var alqaddy = {lat: 30.842069, lng:29.606837};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: alqaddy,
