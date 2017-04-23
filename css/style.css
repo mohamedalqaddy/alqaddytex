@@ -67,6 +67,7 @@ p,a{
 }
 .header-text > .row{
     width:100%;
+    margin: 0;
 }
 .header-text h5{
     margin-top: -20px;
@@ -226,6 +227,12 @@ footer p{
 @media only all and (max-width: 850px) and (min-width:600px) {
     .rslides img{
         transform: translateX(-20%);
+    }
+}
+
+@media only all and (max-width:750px) and (min-width: 375px){
+    .header-text{
+        margin-top:230px;
     }
 }
 
